@@ -1,3 +1,18 @@
-<script>
-javascript:( function(){ var accountName = window.prompt("Digite o nome do ambiente VTEX:", ""); if(accountName === null){ return }else{ window.location.replace("https://"+accountName+".myvtex.com/admin"); } } )()
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    window.onload = function () {
+      var accountName = window.prompt("Digite o nome do ambiente VTEX:", "");
+      if (accountName === null || accountName === "") {
+        return;
+      } else {
+        window.location.replace("https://" + accountName + ".myvtex.com/admin");
+      }
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>
